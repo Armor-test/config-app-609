@@ -1,0 +1,40 @@
+# CODEOWNERS file for config-app-609
+# Global owners - will be requested for all PRs
+* @Armor-test/grp-payments @Armor-test/dept-test @Armor-test/dept-reporting
+
+# Directory ownership
+/config/ @Armor-test/squad-ux @Armor-test/team-logging
+/api/ @Armor-test/team-core @Armor-test/squad-search
+/build/ @Armor-test/grp-ui @Armor-test/dept-api
+/scripts/ @Armor-test/squad-product @Armor-test/team-logging @Armor-test/unit-test
+/test/ @Armor-test/dept-identity @Armor-test/dept-billing
+/web/ @Armor-test/team-core @Armor-test/dept-api @Armor-test/grp-storage
+/core/ @Armor-test/team-security @Armor-test/squad-ux
+/auth/ @Armor-test/team-frontend @Armor-test/dept-identity @Armor-test/dept-data
+/common/ @Armor-test/squad-qa @Armor-test/team-governance @Armor-test/squad-payments
+/pages/ @Armor-test/grp-integration @Armor-test/dept-reporting
+/plugins/ @Armor-test/dept-release @Armor-test/squad-product
+/docs/ @Armor-test/grp-api @Armor-test/unit-cloud @Armor-test/squad-search
+/utils/ @Armor-test/squad-cache @Armor-test/dept-billing
+/views/ @Armor-test/squad-research @Armor-test/dept-data @Armor-test/squad-ml
+/deploy/ @Armor-test/squad-research @Armor-test/team-notifications
+
+# File type ownership
+*.tf @Armor-test/dept-release @Armor-test/dept-data
+*.rb @Armor-test/unit-governance @Armor-test/team-research @Armor-test/team-frontend
+*.php @Armor-test/dept-security @Armor-test/team-research @Armor-test/unit-devops
+*.h @Armor-test/squad-performance @Armor-test/squad-cache
+*.swift @Armor-test/grp-ui @Armor-test/grp-api
+*.yml @Armor-test/team-core @Armor-test/team-security
+*.proto @Armor-test/squad-ml @Armor-test/grp-search
+*.css @Armor-test/team-core @Armor-test/team-reporting
+*.config @Armor-test/squad-cache @Armor-test/dept-billing @Armor-test/dept-data
+*.jsx @Armor-test/squad-qa @Armor-test/grp-search
+*.py @Armor-test/team-research @Armor-test/grp-payments @Armor-test/team-security
+*.yaml @Armor-test/squad-research @Armor-test/squad-product
+*.md @Armor-test/dept-identity @Armor-test/dept-notifications @Armor-test/dept-automation
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
